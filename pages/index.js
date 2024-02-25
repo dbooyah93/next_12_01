@@ -18,6 +18,11 @@ export default function Home() {
             href="/blog">
             <a>Blog</a>
           </Link>
+          <br/>
+          <Link
+            href="/product">
+            <a>Products</a>
+          </Link>
         </div>
       </main>
 
