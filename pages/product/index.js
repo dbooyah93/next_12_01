@@ -17,7 +17,6 @@ let product = function ({ productID = 100} ) {
 
     return (
         <>
-            {links}
             <Link href='/'>
                 Home
             </Link>
@@ -36,6 +35,8 @@ let product = function ({ productID = 100} ) {
                     Product 3
                 </Link>
             </p>
+            {links}
+
         </>
     )
 }
