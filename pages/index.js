@@ -2,8 +2,17 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export default function Home() {
+  
+  const router = useRouter();
+
+  const handleClick = () => {
+    console.log('placing your order');
+    router.replace('/product');
+  }
+  
   return (
     <div className={styles.container}>
       <Head>
@@ -24,6 +33,7 @@ export default function Home() {
             <a>Products</a>
           </Link>
         </div>
+        <button onClick={handleClick}>Place Order</button>
       </main>
 
       <footer className={styles.footer}>
